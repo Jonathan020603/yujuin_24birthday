@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yu Juin turns 24 🎂</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap');
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:'DM Sans',sans-serif;background:#fff8fb;color:#34252d}
+body{overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:-2;background:
+ radial-gradient(circle at 15% 15%,#ffd7e5 0 10%,transparent 28%),
+ radial-gradient(circle at 85% 20%,#dff7ff 0 9%,transparent 27%),
+ radial-gradient(circle at 80% 85%,#fff0b8 0 10%,transparent 29%),
+ linear-gradient(135deg,#fff9fc,#fffdf5)}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:10;overflow:hidden}
+.confetti i{position:absolute;width:9px;height:16px;border-radius:4px;animation:fall 7s linear infinite;opacity:.8}
+@keyframes fall{from{transform:translateY(-30px) rotate(0)}to{transform:translateY(110vh) rotate(720deg)}}
+nav{position:relative;display:flex;justify-content:center;padding:22px 20px;font-weight:700;letter-spacing:.5px}
+nav span{background:#fff;border:2px solid #34252d;border-radius:999px;padding:9px 16px;box-shadow:4px 4px 0 #34252d}
+.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 20px}
+.card{max-width:780px}
+.badge{display:inline-block;background:#ffdfec;border:2px solid #34252d;border-radius:999px;padding:8px 16px;font-weight:700;transform:rotate(-2deg);box-shadow:3px 3px 0 #34252d}
+h1{font-family:'Baloo 2';font-size:clamp(4.3rem,15vw,9rem);line-height:.78;margin:30px 0 15px;letter-spacing:-4px}
+h1 span{display:block;color:#ff6f9d;text-shadow:4px 4px 0 #34252d}
+.sub{font-size:clamp(1rem,3vw,1.35rem);max-width:590px;margin:auto;line-height:1.7}
+.btn{border:2px solid #34252d;background:#34252d;color:white;padding:14px 22px;border-radius:16px;font-weight:700;font-size:1rem;cursor:pointer;box-shadow:5px 5px 0 #ff8eb4;margin:24px 7px 0;transition:.15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 #ff8eb4}
+section{padding:80px 20px;max-width:1000px;margin:auto}
+h2{font-family:'Baloo 2';font-size:clamp(2.5rem,7vw,4rem);text-align:center;margin:0 0 35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.note{background:#fff;border:2px solid #34252d;border-radius:25px;padding:27px;box-shadow:7px 7px 0 #ffd0df;transform:rotate(var(--r))}
+.note:nth-child(2){box-shadow:7px 7px 0 #cceff8}.note:nth-child(3){box-shadow:7px 7px 0 #ffe99e}
+.note .emoji{font-size:2.5rem}.note h3{font-family:'Baloo 2';font-size:1.7rem;margin:12px 0 5px}.note p{line-height:1.65;margin:0}
+.game{background:#34252d;color:white;border-radius:30px;padding:35px;text-align:center;box-shadow:9px 9px 0 #ff91b6}
+#meter{height:22px;background:#57414b;border-radius:99px;overflow:hidden;margin:25px auto;max-width:500px;border:2px solid #fff}
+#bar{height:100%;width:8%;background:linear-gradient(90deg,#ff76a7,#ffd76e);transition:.4s}
+.message{min-height:80px;font-size:1.1rem;line-height:1.7}
+footer{text-align:center;padding:50px 20px 80px;font-family:'Baloo 2';font-size:1.4rem}
+.hidden{display:none}
+#toast{position:fixed;left:50%;bottom:25px;transform:translateX(-50%) translateY(100px);background:#34252d;color:white;padding:14px 20px;border-radius:999px;z-index:20;transition:.3s;text-align:center}
+#toast.show{transform:translateX(-50%) translateY(0)}
+.small{font-size:.9rem;opacity:.75}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="confetti" id="confetti"></div>
+<nav><span>✿ Yu Juin's 24th ✿</span></nav>
+
+<main>
+<section class="hero">
+<div class="card">
+<div class="badge">OFFICIALLY 24 🎂</div>
+<h1>Happy <span>Yu Juin!</span></h1>
+<p class="sub">To one wonderfully stubborn girl — may life keep giving you good things, good people, ridiculous laughs, and plenty of reasons to smile.</p>
+<button class="btn" onclick="surprise()">🎁 Press for birthday nonsense</button>
+</div>
+</section>
+
+<section>
+<h2>A tiny guide to being 24</h2>
+<div class="grid">
+<article class="note" style="--r:-2deg"><div class="emoji">🌷</div><h3>Keep going</h3><p>Some days are great. Some days are weird. Some days are just “nvm”. Keep going anyway. Life goes on — and so do you.</p></article>
+<article class="note" style="--r:2deg"><div class="emoji">😤</div><h3>Stay stubborn</h3><p>Honestly, the stubbornness is part of the package now. Use it wisely. Or don't. You're 24. Nobody can stop you.</p></article>
+<article class="note" style="--r:-1deg"><div class="emoji">🍰</div><h3>Choose the good life</h3><p>More little joys. More spontaneous plans. More food worth remembering. Less overthinking things that don't deserve your energy.</p></article>
+</div>
+</section>
+
+<section>
+<div class="game">
+<h2>How stubborn are you?</h2>
+<p>Tap the button until Yu Juin's stubbornness reaches a completely scientifically accurate 100%.</p>
+<div id="meter"><div id="bar"></div></div>
+<p id="score">Stubbornness: 8%</p>
+<button class="btn" style="background:#ff6f9d;border-color:white;box-shadow:5px 5px 0 #fff" onclick="stubborn()">I'M NOT STUBBORN 😤</button>
+<p class="small">*The button disagrees with you.</p>
+</div>
+</section>
+
+<section style="text-align:center">
+<h2>One last thing…</h2>
+<p style="font-size:1.25rem;line-height:1.9;max-width:650px;margin:auto">
+Whatever 24 brings, I hope you get to live it in your own way.<br>
+Laugh loudly. Rest when you need to. Be stubborn about the things that matter.<br>
+And when life gets messy, just remember:
+<strong>nvm — life goes on. 🌱</strong>
+</p>
+<button class="btn" onclick="finale()">💌 Open the secret message</button>
+<p id="secret" class="hidden" style="font-family:'Baloo 2';font-size:2rem;margin-top:30px;color:#ff5f91">
+If life ever gives us a second round… you are absolutely the person I would NOT want to meet again. 😭<br><span style="font-size:1.05rem">One lifetime of your stubbornness is already a premium subscription. But hey, happy 24th anyway. 💗</span>
+</p>
+</section>
+</main>
+
+<footer>Made specially for Yu Juin · 24 looks good on you ✿</footer>
+<div id="toast"></div>
+
+<script>
+let s=8;
+const colors=['#ff6f9d','#74c9e8','#ffd45c','#9bd99b','#b69cff'];
+for(let i=0;i<45;i++){let x=document.createElement('i');x.style.left=Math.random()*100+'%';x.style.top=Math.random()*-100+'px';x.style.background=colors[i%colors.length];x.style.animationDelay=Math.random()*6+'s';x.style.animationDuration=5+Math.random()*5+'s';document.getElementById('confetti').appendChild(x)}
+function toast(t){let x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2200)}
+function surprise(){toast('🎉 Surprise! You have been upgraded to Level 24: slightly wiser, equally stubborn.');burst()}
+function stubborn(){s=Math.min(100,s+Math.floor(Math.random()*12)+5);document.getElementById('bar').style.width=s+'%';document.getElementById('score').textContent='Stubbornness: '+s+'%';if(s>=100){toast('🚨 CONFIRMED: stubborn girl detected. Happy birthday!');burst()}else if(s>65)toast('The evidence is becoming overwhelming 😭')}
+function finale(){document.getElementById('secret').classList.remove('hidden');burst();setTimeout(()=>toast('💗 Now go have a very good 24th year.'),400)}
+function burst(){for(let i=0;i<18;i++){let x=document.createElement('i');x.style.left='50%';x.style.top='35%';x.style.background=colors[i%colors.length];x.style.animation='none';x.style.transition='1s';document.body.appendChild(x);requestAnimationFrame(()=>{x.style.transform=`translate(${(Math.random()-.5)*700}px,${(Math.random()-.5)*500}px) rotate(${Math.random()*500}deg)`;x.style.opacity=0});setTimeout(()=>x.remove(),1000)}}
+</script>
+</body>
+</html>
